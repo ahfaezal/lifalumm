@@ -1,0 +1,1 @@
+export type Campaign = typeof import("@/data/campaign").campaign;
