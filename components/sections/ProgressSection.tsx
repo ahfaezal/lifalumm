@@ -19,18 +19,18 @@ export function ProgressSection() {
         </div>
 
         <Card className="rounded-3xl p-10">
-          <div className="mb-6 flex justify-between gap-6">
+          <div className="mb-6 flex flex-col gap-6 md:flex-row md:justify-between">
             <div>
               <div className="text-sm text-muted-foreground">
                 Dana Terkumpul
               </div>
 
-              <div className="text-4xl font-bold text-emerald-700">
+              <div className="text-3xl font-bold text-emerald-700 md:text-4xl">
                 {formatCurrency(campaign.collectedAmount)}
               </div>
             </div>
 
-            <div className="text-right">
+            <div className="md:text-right">
               <div className="text-sm text-muted-foreground">Sasaran</div>
 
               <div className="text-2xl font-semibold">

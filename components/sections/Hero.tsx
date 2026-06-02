@@ -27,7 +27,7 @@ export function Hero() {
             Kempen Infaq Masjid Al Umm
           </div>
 
-          <h1 className="mt-8 text-5xl font-bold leading-tight md:text-7xl">
+          <h1 className="mt-8 text-4xl font-bold leading-tight md:text-7xl">
 
             Bantu Lengkapkan
             <br />
@@ -77,7 +77,7 @@ export function Hero() {
               Baki Masih Diperlukan
             </div>
 
-            <div className="mt-3 text-5xl font-bold">
+            <div className="mt-3 text-4xl font-bold md:text-6xl">
               RM{campaign.remainingAmount.toLocaleString()}
             </div>
 
