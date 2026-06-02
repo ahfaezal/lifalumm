@@ -12,23 +12,37 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title:
-    "Sumbangan Dana Lif Baharu Masjid Al Umm",
-
+export const metadata: Metadata = {
+  title: "Sumbangan Dana Lif Baharu Masjid Al Umm",
   description:
     "Bantu melengkapkan baki bayaran lif baharu Masjid Al Umm demi kemudahan warga emas, OKU, ibu mengandung dan seluruh jemaah.",
 
-  openGraph: {
-    title:
-      "Sumbangan Dana Lif Baharu Masjid Al Umm",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
 
+  openGraph: {
+    title: "Sumbangan Dana Lif Baharu Masjid Al Umm",
     description:
       "Setiap sumbangan membawa kemudahan kepada seluruh jemaah.",
-
     images: [
-      "/images/hero-masjid.jpg"
+      {
+        url: "/images/hero-masjid.png",
+        width: 1200,
+        height: 630,
+        alt: "Sumbangan Dana Lif Baharu Masjid Al Umm",
+      },
     ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Sumbangan Dana Lif Baharu Masjid Al Umm",
+    description:
+      "Bantu melengkapkan baki bayaran lif baharu Masjid Al Umm.",
+    images: ["/images/hero-masjid.png"],
   },
 };
 
@@ -39,10 +53,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ms"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">{children}</body>
     </html>
   );
 }
