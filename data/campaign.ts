@@ -10,7 +10,7 @@ export const campaign = {
 
   bank: {
     name: "Bank Islam",
-    accountName: "Tabung Masjid Al Umm",
+    accountName: "Masjid Al Umm",
     accountNumber: "1202-9010-071269",
   },
 
